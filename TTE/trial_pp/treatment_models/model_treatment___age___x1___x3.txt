@@ -1,0 +1,29 @@
+Formula: treatment ~ age + x1 + x3
+
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:              treatment   No. Observations:                  725
+Model:                            GLM   Df Residuals:                      721
+Model Family:                Binomial   Df Model:                            3
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -478.67
+Date:                Sun, 09 Mar 2025   Deviance:                       957.34
+Time:                        13:01:22   Pearson chi2:                     726.
+No. Iterations:                     4   Pseudo R-squ. (CS):            0.05976
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      1.8308      0.356      5.145      0.000       1.133       2.528
+age           -0.0429      0.007     -6.261      0.000      -0.056      -0.029
+x1             0.2744      0.157      1.752      0.080      -0.033       0.581
+x3            -0.0321      0.155     -0.207      0.836      -0.336       0.272
+==============================================================================
+
+Data sample:
+   id  period  treatment  x1        x2  x3        x4  age     age_s  outcome  censored  eligible
+0   1       0          1   1  1.146148   0  0.734203   36  0.083333        0         0         1
+1   1       1          1   1  0.002200   0  0.734203   37  0.166667        0         0         0
+2   1       2          1   0 -0.481762   0  0.734203   38  0.250000        0         0         0
+3   1       3          1   0  0.007872   0  0.734203   39  0.333333        0         0         0
+4   1       4          1   1  0.216054   0  0.734203   40  0.416667        0         0         0
