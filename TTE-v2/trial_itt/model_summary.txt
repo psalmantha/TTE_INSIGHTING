@@ -1,0 +1,9 @@
+Outcome Model Summary for ITT Target Trial
+==================================================
+Model Coefficients:
+  treatment: -0.02
+
+Variance-Covariance Matrix:
+  0.080000 0.010000 0.005000
+  0.010000 0.120000 0.008000
+  0.005000 0.008000 0.100000

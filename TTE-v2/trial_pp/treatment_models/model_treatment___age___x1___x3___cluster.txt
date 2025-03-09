@@ -1,0 +1,30 @@
+Formula: treatment ~ age + x1 + x3 + cluster
+
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:              treatment   No. Observations:                  725
+Model:                            GLM   Df Residuals:                      720
+Model Family:                Binomial   Df Model:                            4
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -478.64
+Date:                Sun, 09 Mar 2025   Deviance:                       957.29
+Time:                        20:50:25   Pearson chi2:                     726.
+No. Iterations:                     4   Pseudo R-squ. (CS):            0.05983
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      1.9572      0.672      2.914      0.004       0.641       3.274
+age           -0.0430      0.007     -6.264      0.000      -0.056      -0.030
+x1             0.3079      0.217      1.416      0.157      -0.118       0.734
+x3            -0.1427      0.522     -0.274      0.784      -1.165       0.880
+cluster       -0.0695      0.313     -0.222      0.824      -0.683       0.544
+==============================================================================
+
+Data sample:
+   id  period  treatment  x1        x2  x3        x4  age     age_s  outcome  censored  eligible  cluster
+0   1       0          1   1  1.146148   0  0.734203   36  0.083333        0         0         1        2
+1   1       1          1   1  0.002200   0  0.734203   37  0.166667        0         0         0        2
+2   1       2          1   0 -0.481762   0  0.734203   38  0.250000        0         0         0        2
+3   1       3          1   0  0.007872   0  0.734203   39  0.333333        0         0         0        2
+4   1       4          1   1  0.216054   0  0.734203   40  0.416667        0         0         0        2

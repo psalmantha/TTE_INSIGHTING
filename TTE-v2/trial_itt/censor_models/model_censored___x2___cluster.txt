@@ -1,0 +1,28 @@
+Formula: censored ~ x2 + cluster
+
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:               censored   No. Observations:                  725
+Model:                            GLM   Df Residuals:                      722
+Model Family:                Binomial   Df Model:                            2
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -196.37
+Date:                Sun, 09 Mar 2025   Deviance:                       392.73
+Time:                        20:50:25   Pearson chi2:                     729.
+No. Iterations:                     6   Pseudo R-squ. (CS):            0.01572
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     -2.2943      0.229    -10.026      0.000      -2.743      -1.846
+x2             0.4574      0.137      3.332      0.001       0.188       0.726
+cluster       -0.1293      0.157     -0.822      0.411      -0.437       0.179
+==============================================================================
+
+Data sample:
+   id  period  treatment  x1        x2  x3        x4  age     age_s  outcome  censored  eligible  cluster
+0   1       0          1   1  1.146148   0  0.734203   36  0.083333        0         0         1        2
+1   1       1          1   1  0.002200   0  0.734203   37  0.166667        0         0         0        2
+2   1       2          1   0 -0.481762   0  0.734203   38  0.250000        0         0         0        2
+3   1       3          1   0  0.007872   0  0.734203   39  0.333333        0         0         0        2
+4   1       4          1   1  0.216054   0  0.734203   40  0.416667        0         0         0        2
